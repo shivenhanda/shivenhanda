@@ -3,8 +3,6 @@
 
 Email Me 👉 ✉️ *shivenhanda2003@gmail.com** For Collaboration/Project or Anything Else. 😊😊
 
-- 🔭 **I’m currently working on:** Social Media Website
-- 🌱 **I’m currently learning:** Mern Stack Development
 - 💬 **Ask me about:** Collaboration, Tech Support
 - 📫 **How to reach me:** shivenhanda2003@gmail.com
 - 😄 **Pronouns:** Shiven Handa
