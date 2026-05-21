@@ -31,7 +31,7 @@ export default function Navbar(){
             <div className="mx-auto md:flex md:space-x-10">
                 <p className={`text-center text-lg`} onClick={()=>setDisplay(!display)}>{isMobile?(display?"☰":<i className="fa-solid fa-x fa-lg text-red-500 font-bold"></i>):""}</p>
                 <div className="relative hover:text-purple-500 group text-center">
-                <Link to="/" className="text-base md:text-lg font-medium tracking-wide">{isMobile && display?"":"Home"}</Link>
+                <Link className="text-base md:text-lg font-medium tracking-wide" onClick={()=>document.getElementById("main").scrollIntoView({behavior:"smooth"})}>{isMobile && display?"":"Home"}</Link>
                 <span className="absolute left-0 bottom-0 
                 w-0 h-0.75 bg-purple-500 transition-all duration-300 group-hover:w-full "></span>
                 </div>

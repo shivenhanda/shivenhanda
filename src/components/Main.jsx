@@ -3,7 +3,7 @@ import { easeInOut, motion } from "framer-motion"
 
 export default function Main(){
     return(
-        <div className="mx-auto md:flex justify-between md:space-x-10 md-pt-32 w-full h-150 bg-gray-900 relative">
+        <div className="mx-auto md:flex justify-between md:space-x-10 md-pt-32 w-full h-150 bg-gray-900 relative" id="main">
             <div className="text-white md:flex justify-center items-center w-full flex-col p-5">
                 <p className="text-4xl md:text-5xl whitespace-nowrap">Hi, I'm <span className="text-purple-500">Shiven Handa</span></p>
                 <p className="text-3xl md-4xl typewriter">Mern Stack Developer</p>
