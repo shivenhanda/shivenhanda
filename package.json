@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
+    "@vercel/analytics": "^2.0.1",
     "framer-motion": "^12.35.1",
     "motion": "^12.36.0",
     "react": "^19.2.0",
