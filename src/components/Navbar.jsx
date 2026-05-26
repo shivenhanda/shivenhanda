@@ -40,7 +40,7 @@ export default function Navbar(){
                     <span className="absolute w-0 h-0.75 left-0 bottom-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
                 </div>
                 <div className="relative hover:text-purple-500 group text-center">
-                    <Link to="/skills" className="text-base md:text-lg font-medium tracking-wide">{isMobile && display?"":"Skills"}</Link>
+                    <Link onClick={()=>document.getElementById("skills").scrollIntoView({behavior:"smooth"})} className="text-base md:text-lg font-medium tracking-wide">{isMobile && display?"":"Skills"}</Link>
                     <span className="absolute left-0 bottom-0 
                 w-0 h-0.75 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
                 </div>
