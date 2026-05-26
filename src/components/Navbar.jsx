@@ -50,7 +50,7 @@ export default function Navbar(){
                 w-0 h-0.75 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
                 </div>
                 <div className="relative hover:text-purple-500 group text-center">
-                    <Link to="/contact" className="text-base md:text-lg font-medium tracking-wide">{isMobile && display?"":"Contact"}</Link>
+                    <Link onClick={()=>document.getElementById("contact").scrollIntoView({behavior:"smooth"})} className="text-base md:text-lg font-medium tracking-wide">{isMobile && display?"":"Contact"}</Link>
                     <span className="absolute left-0 bottom-0 
                 w-0 h-0.75 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
                 </div>
