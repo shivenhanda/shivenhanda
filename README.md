@@ -9,9 +9,9 @@
 
 ## About Me
 
-- 💻 Full Stack Developer
+- 💻 Full Stack Developer || MERN Stack Developer
 - 🤝 Open to collaborations & projects
-- ⚡ Building modern web apps with React & Node.js
+- ⚡ Building modern web apps with React, Node.js, Express.js and MongoDB
 
 ---
 
