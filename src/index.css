@@ -1,9 +1,59 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
-*{
-   font-family: "Roboto", sans-serif,Arial;
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-primary: #8b5cf6;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  --color-border: #e2e8f0;
+  --color-muted: #64748b;
+  --color-muted-foreground: #475569;
+  --radius: 0.75rem;
+
+  --font-sans: "Roboto", sans-serif, Arial;
+}
+
+html.dark {
+  --color-background: #0f172a;
+  --color-foreground: #f8fafc;
+  --color-card: #1e293b;
+  --color-card-foreground: #f8fafc;
+  --color-border: #334155;
+  --color-muted: #94a3b8;
+  --color-muted-foreground: #cbd5e1;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html,
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+   font-family: "Roboto", sans-serif, Arial;
 }
 .typewriter{
   overflow: hidden;
