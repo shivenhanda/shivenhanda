@@ -25,14 +25,6 @@ export default function About() {
                         I enjoy solving real-world problems through code and constantly challenge myself with new projects. From authentication systems to full-stack CRUD applications, I focus on understanding core concepts deeply rather than relying on tutorials, so I can build things from scratch with confidence.
                     </p>
 
-                    <div className="flex justify-center gap-3 mt-6">
-                    <i className="fa-brands fa-html5 text-3xl md:text-4xl" style={{ color: "rgb(255, 7, 0)" }}></i>
-                    <i className="fa-brands fa-css3-alt text-3xl md:text-4xl" style={{color: "rgb(0, 92, 255)"}}></i>
-                    <i className="fa-brands fa-js text-3xl md:text-4xl" style={{color: "rgb(255, 212, 59)"}}></i>
-                    <i className="fa-brands fa-react text-3xl md:text-4xl" style={{color: "rgb(3, 255, 241)"}}></i>
-                    <i className="fa-brands fa-node-js text-3xl md:text-4xl" style={{color: "rgb(42, 167, 49)"}}></i>
-                    <i className="fa-solid fa-database text-3xl md:text-4xl" style={{color: "rgb(42, 167, 49)"}}></i>
-                    </div>
                 </div>
             </div>
         </motion.div>
