@@ -241,3 +241,43 @@ html.dark .project-link-primary {
         transition: none;
     }
 }
+
+
+
+.mouse-circle {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(16, 185, 129, 0.8);
+  border-radius: 50%;
+
+  background: rgba(16, 185, 129, 0.08);
+
+  box-shadow:
+    0 0 15px rgba(16, 185, 129, 0.25),
+    0 0 35px rgba(16, 185, 129, 0.18),
+    0 0 60px rgba(16, 185, 129, 0.10),
+    inset 0 0 20px rgba(16, 185, 129, 0.12);
+
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+.mouse-circle-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #10b981;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.9);
+}
+
+@media (pointer: coarse) {
+  .mouse-circle {
+    display: none;
+  }
+}
