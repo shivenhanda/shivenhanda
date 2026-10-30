@@ -30,7 +30,7 @@ export default function Navbar() {
                         </a>
                     </div>
                     <div className="mx-auto md:flex md:space-x-10">
-                        <p className={`text-center text-lg text-foreground`} onClick={() => setDisplay(!display)}>{isMobile ? (display ? "?" : <i className="fa-solid fa-x fa-lg text-primary font-bold"></i>) : ""}</p>
+                        <p className={`text-center text-lg text-foreground`} onClick={() => setDisplay(!display)}>{isMobile ? (display ? "☰" : <i className="fa-solid fa-x fa-lg text-primary font-bold"></i>) : ""}</p>
                         <div className="relative group text-center">
                             <Link className="text-base md:text-lg font-medium tracking-wide text-foreground hover:text-primary transition-colors" onClick={() => document.getElementById("main").scrollIntoView({ behavior: "smooth" })}>{isMobile && display ? "" : "Home"}</Link>
                             <span className="absolute left-0 bottom-0 w-0 h-0.75 bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -51,7 +51,9 @@ export default function Navbar() {
                             <Link onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })} className="text-base md:text-lg font-medium tracking-wide text-foreground hover:text-primary transition-colors">{isMobile && display ? "" : "Contact"}</Link>
                             <span className="absolute left-0 bottom-0 w-0 h-0.75 bg-primary transition-all duration-300 group-hover:w-full"></span>
                         </div>
-                        <ThemeToggle />
+                        <div className="flex justify-center md:block">
+                            <ThemeToggle />
+                        </div>
                     </div>
                 </div>
             </nav>
